@@ -18,16 +18,14 @@ run_analysis.R does the following 1 ~ 6 required tasks of Course Project.
 * downloaded zip file is extracted in .\data (. is R working directory).
 * rename directory name 'UCIHAR Dataset' to 'UCIHARDataset' to avoid the issue of handling directory name which has ' '(space) in Windows OS.
 * following data sets are created in R workspace by reading TEXT files.
-
-* **ft** data set:data from 'features.txt' (List of all features).
-* **at** data set:data from 'activity_labels.txt' (Links the class labels with their activity name).
-
-* **test_sj** data frame:data from 'test\subject_test.txt' (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30)
-* **test_x** data frame :data from 'test\X_test.txt' (Test set)
-* **test_y** data frame :data from 'test\y_test.txt' (Test labels)
-* **train_sj** data frame:data from 'train\subject_train.txt' (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30) 
-* **train_x** data frame :data from 'train\X_train.txt': Training set.
-* **train_y** data frame :data from 'train\y_train.txt': Training labels.
+    * **ft** data set:data from 'features.txt' (List of all features)
+    * **at** data set:data from 'activity_labels.txt' (Links the class labels with their activity name)
+    * **test_sj** data frame:data from 'test\subject_test.txt' (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30)
+    * **test_x** data frame :data from 'test\X_test.txt' (Test set)
+    * **test_y** data frame :data from 'test\y_test.txt' (Test labels)
+    * **train_sj** data frame:data from 'train\subject_train.txt' (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30) 
+    * **train_x** data frame :data from 'train\X_train.txt': Training set.
+    * **train_y** data frame :data from 'train\y_train.txt': Training labels.
 
 ###Programming flow of run_analysis.R
 1. combine test data of subject id, activity id, and feature measurments by column and combine train data of subject id, activity id, and features measurments by column. Then, combine test_data and train_data by row.
