@@ -1,6 +1,6 @@
 ##run_analysis.R
 run_analysis.R is to create tidy data set according to Course Project of Coursera "Getting and Cleaning Data".
-The tidy data set : **Averages of feature measurements which are Mean or Standard Deviation for each activity and each subject**.
+The tidy data set is **Averages of feature measurements which are Mean or Standard Deviation for each activity and each subject**.
 run_analysis.R does the following 1 ~ 6 required tasks of Course Project.
 
 ###Required tasks of Course Project
@@ -12,16 +12,15 @@ run_analysis.R does the following 1 ~ 6 required tasks of Course Project.
 6. Write the second tidy data set to TEXT file.
 
 ###Pre-required process to run_analysis.R from R console
-* this run_analysis.R works under Windows OS ('\\\\' is Windows identifier to handle directory in R, under Mac or Linux you have to replace '\\\\' appropreately)
+* this run_analysis.R works under Windows OS ('\\\\' is Windows identifier to handle directory in R, under Mac or Linux you have to replace '\\\\' appropreately).
 * run_analysis.R must be in working directory of R console.
+* data download from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+* downloaded zip file is extracted in .\data (. is R working directory).
+* rename directory name 'UCIHAR Dataset' to 'UCIHARDataset' to avoid the issue of handling directory name which has ' '(space) in Windows OS.
+* following data sets are created in R workspace by reading TEXT files.
 
-* data download from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-* downloaded zip file is extracted in .\data (. is R working directory)
-* rename directory name 'UCIHAR Dataset' to 'UCIHARDataset' to avoid the issue of handling directory name which has ' '(space) in Windows OS
-* following data sets are created in R workspace by reading TEXT files
-
-* **ft** data set:data from 'features.txt' (List of all features)
-* **at** data set:data from 'activity_labels.txt' (Links the class labels with their activity name)
+* **ft** data set:data from 'features.txt' (List of all features).
+* **at** data set:data from 'activity_labels.txt' (Links the class labels with their activity name).
 
 * **test_sj** data frame:data from 'test\subject_test.txt' (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30)
 * **test_x** data frame :data from 'test\X_test.txt' (Test set)
