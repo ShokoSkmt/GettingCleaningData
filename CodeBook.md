@@ -10,19 +10,19 @@ Output file includes 68 variables. 1 and 2 are IDs and 3 ~ 68 are numeric values
 * 'mean' indicates data is Mean value and 'std' in Standard Diviation 
 * Other words such as 'Body', 'Gravity', and 'Jerk' identify signals from the accelometer and gyroscope.
 * For more information about meaning of each feature, please see features_info.txt from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-
-1. activity - descriptive activity name 
-- WALKING
-
-- WALKING_UPSTAIRS
  
-- WALKING_DOWNSTAIRS
-- SITTING
+1. activity - descriptive activity name 
+    - WALKING
+
+    - WALKING_UPSTAIRS
+ 
+    - WALKING_DOWNSTAIRS
+    - SITTING
  STANDING
-- LAYING
+    - LAYING
 
 2. subject_id - id number of volunteer 
-- 1 ~ 30
+    - 1 ~ 30
 3. tBodyAcc_mean_X
 4. tBodyAcc_mean_Y
 5. tBodyAcc_mean_Z
