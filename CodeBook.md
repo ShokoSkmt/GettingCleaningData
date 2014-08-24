@@ -13,14 +13,11 @@ Output file includes 68 variables. 1 and 2 are IDs and 3 ~ 68 are numeric values
  
 1. activity - descriptive activity name 
     - WALKING
-
     - WALKING_UPSTAIRS
- 
     - WALKING_DOWNSTAIRS
     - SITTING
- STANDING
+    - STANDING
     - LAYING
-
 2. subject_id - id number of volunteer 
     - 1 ~ 30
 3. tBodyAcc_mean_X
