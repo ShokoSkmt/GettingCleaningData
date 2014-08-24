@@ -1,6 +1,6 @@
 #Code Book
 
-Output file includes 68 variables. 1 and 2 are ids and 3 ~ 68 are numeric values and are the averages of each feature measurement by each activity and each subject id.
+Output file includes 68 variables. 1 and 2 are IDs and 3 ~ 68 are numeric values and are the averages of each feature measurement by each activity and each subject id.
 
 ####Features
 * Features are normalized and bounded within [-1,1]
@@ -11,18 +11,18 @@ Output file includes 68 variables. 1 and 2 are ids and 3 ~ 68 are numeric values
 * Other words such as 'Body', 'Gravity', and 'Jerk' identify signals from the accelometer and gyroscope.
 * For more information about meaning of each feature, please see features_info.txt from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-1. activity 	Character	descriptive activity name 
-    WALKING
+1. activity - descriptive activity name 
+- WALKING
 
-    WALKING_UPSTAIRS
+- WALKING_UPSTAIRS
  
-    WALKING_DOWNSTAIRS
-    SITTING
+- WALKING_DOWNSTAIRS
+- SITTING
  STANDING
-   
- LAYING
+- LAYING
 
-2. subject_id 	Integer		id number of volunteer (1 ~ 30)
+2. subject_id - id number of volunteer 
+- 1 ~ 30
 3. tBodyAcc_mean_X
 4. tBodyAcc_mean_Y
 5. tBodyAcc_mean_Z
