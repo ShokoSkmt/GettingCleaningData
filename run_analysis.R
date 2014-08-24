@@ -41,23 +41,9 @@ nn <- ncol(dfmydata)
 mydata <- dfmydata[ names(dfmydata)[c(nn, 2:(nn-1))]]
 
 ## 5.Creates a second, independent tidy data set with the average of each variable for each activity and each subject
-## calculate average for each valriable using aggregate function by each activity and each subject_id
-## repeat average calculation, data sort and combine to final data frame using for loop
-## at the same time change column name by adding "AVE_" to front 
-for(i in 1:irow) {
-  ii <- i + 2
-  wv <- aggregate(mydata[ii], by = list(activity=mydata$activity, subject_id=mydata$subject_id), FUN=mean, na.rm=TRUE)  
-  swv <- wv[ order(as.character(wv[,1]), as.numeric(wv[,2])), ]
-  setnames(swv, 3, paste("AVE_", names(mydata)[ii], sep=""))
-  if (i==1) {
-      fmydata <- swv
-  }
-  else {
-    fmydata <- cbind(fmydata, swv[3])
-    
-  }
-  
-}
+## calculate average of each valriable using aggregate function by each activity and each subject_id
+  wv <- aggregate(mydata[3:(irow+2)], by = list(activity=mydata$activity, subject_id=mydata$subject_id), FUN=mean, na.rm=TRUE)  
+  fmydata <- wv[ order(as.character(wv[,1]), as.numeric(wv[,2])), ]
 
 ## Export data set to TEXT file
 write.table(fmydata, ".\\data\\UCIHARDataset\\average_mean_std_by_activity_subject.txt", row.names = FALSE, col.names=FALSE)
